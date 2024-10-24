@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas Nacional</title>
+    <script defer src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-screen">
+    <div class="text-center">
+        <h1 class="text-3xl font-semibold text-white mb-8">Conversor de monedas Nacional</h1>
+        <div class="bg-gray-600 rounded-lg p-8 shadow-lg w-80 mx-auto">
+            <h2 class="text-xl font-semibold text-white mb-4">Pesos CLP</h2>
+            <input id="pesosInput" type="number" type="text" placeholder="Ingrese el monto en CLP" 
+            class="w-full p-2 mb-4 rounded bg-gray-200 text-gray-800">
+            
+            <label for="moneda" class="block text-white mb-2">Moneda a convertir:</label>
+            <select id="monedaSelect" class="w-full p-2 mb-4 rounded bg-gray-200 text-gray-800">
+                <option>Seleccione moneda</option>
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+                <option value="uf">UF</option>
+                <option value="utm">UTM</option>
+            </select>
+            
+            <button id="buscarBtn" class="w-full p-2 bg-cyan-500 text-white rounded hover:bg-cyan-600">Buscar</button>
+            <p id="resultado" class="text-gray-400 mt-4">...</p>
+        </div>
+        <div id="canvasContainer" class="p-6 mt-8 rounded-lg shadow-lg">
+
+        </div>
+    </div>
+</body>
+</html>
